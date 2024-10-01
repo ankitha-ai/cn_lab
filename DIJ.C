@@ -37,7 +37,7 @@ min_index=j;
 visited[min_index]=1;
 for(j=0;j<v;j++)
 {
-if(!visited[j]&&graph[min_index][j]&&dist[min_index]+graph[min_index])
+if(!visited[j]&&graph[min_index][j]&&dist[min_index]+graph[min_index][j]<dist[j])
 {
 dist[j]=dist[min_index]+graph[min_index][j];
 }
